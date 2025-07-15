@@ -7,6 +7,7 @@ import { ReactLenis, useLenis } from "lenis/react";
 // components
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
 
 // register plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -19,7 +20,8 @@ const App = () => {
       <ReactLenis root />
       <Navbar />
       <Hero />
-      <div className="h-[200vh] w-full bg-dark-brown relative z-40"></div>
+      <About />
+      <div className="min-h-[200vh]"></div>
     </main>
   );
 };
