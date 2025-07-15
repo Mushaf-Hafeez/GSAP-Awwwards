@@ -30,10 +30,23 @@ const Hero = () => {
         },
         "-=0.5"
       );
+
+    // scroll animation
+    gsap.to("#hero", {
+      scale: 0.8,
+      rotate: 10,
+      scrollTrigger: {
+        trigger: "#hero",
+        start: "1% top",
+        end: "bottom center",
+        markers: true,
+        scrub: true,
+      },
+    });
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section id="hero" className="relative h-screen w-full overflow-hidden">
       {/* images for background */}
       <img src="/images/static-img.png" alt="hero img" />
       {/* hero content */}
@@ -62,7 +75,7 @@ const Hero = () => {
             Live life to the fullest with SPYLT: Shatter boredom and embrace
             your inner kid with every deliciously smooth chug.
           </p>
-          <button className="w-fit px-8 py-4 rounded-full  bg-light-brown text-dark-brown cursor-pointer selection:bg-milk">
+          <button className="w-fit px-8 py-4 rounded-full  bg-light-brown text-dark-brown cursor-pointer selection:text-milk selection:bg-dark-brown">
             Chug the SPYLT
           </button>
         </div>
