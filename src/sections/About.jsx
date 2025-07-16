@@ -64,7 +64,7 @@ const About = () => {
       id="about"
       className="relative z-40 min-h-screen w-full bg-dark-brown text-milk flex justify-center"
     >
-      <div className="flex flex-col items-center justify-center text-center my-20">
+      <div className="flex flex-col h-full items-center justify-center text-center my-auto">
         <h1 id="first-heading" className="w-1/2 text-8xl font-bold">
           STIR UP YOUR FEARLESS PAST AND
         </h1>
@@ -73,14 +73,14 @@ const About = () => {
           style={{
             clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
           }}
-          className="w-fit px-1 py-2 bg-light-brown text-dark-brown border-4 border-dark-brown -rotate-2 text-8xl font-bold"
+          className="w-fit px-1 py-2 bg-light-brown text-dark-brown border-4 border-dark-brown rotate-2 text-8xl font-bold"
         >
           FUEL UP
         </h1>
         <h1 id="second-heading" className="w-7/12 text-8xl font-bold -mt-5">
           YOUR FUTURE WITH EVERY GULP OF PERFECT Protein
         </h1>
-        <p id="para" className="max-w-3/12 mt-10 text-center font-paragraph">
+        <p id="para" className="max-w-3/12 text-center font-paragraph mt-20">
           Rev up your rebel spirit and feed the adventure of life with SPYLT,
           where you're one chug away from epic nostalgia and fearless fun.
         </p>

@@ -8,6 +8,8 @@ import { ReactLenis, useLenis } from "lenis/react";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
+import Flavor from "./sections/Flavor";
+import { useEffect } from "react";
 
 // register plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -15,13 +17,20 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 const App = () => {
   const lenis = useLenis();
 
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      ScrollTrigger.refresh();
+    });
+  }, []);
+
   return (
     <main>
       <ReactLenis root />
       <Navbar />
       <Hero />
       <About />
-      <div className="min-h-[200vh]"></div>
+      <Flavor />
+      <div className="min-h-dvh"></div>
     </main>
   );
 };
