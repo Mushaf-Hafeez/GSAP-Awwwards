@@ -43,7 +43,7 @@ const FlavorTitle = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col items-center">
+    <div className="w-[50vw] flex flex-col items-center">
       <div className="overflow-hidden -mb-4 py-2">
         <h1
           id="flavor-first-heading"

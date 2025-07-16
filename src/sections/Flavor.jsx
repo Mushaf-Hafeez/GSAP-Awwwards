@@ -1,5 +1,6 @@
 import React from "react";
 import FlavorTitle from "../components/FlavorTitle";
+import FlavorSlider from "../components/FlavorSlider";
 
 const Flavor = () => {
   return (
@@ -11,7 +12,9 @@ const Flavor = () => {
           <FlavorTitle />
         </div>
         {/* flavor slider */}
-        <div>Slider</div>
+        <div>
+          <FlavorSlider />
+        </div>
       </div>
     </section>
   );

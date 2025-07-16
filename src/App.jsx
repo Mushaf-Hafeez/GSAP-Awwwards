@@ -30,7 +30,7 @@ const App = () => {
       <Hero />
       <About />
       <Flavor />
-      <div className="min-h-dvh"></div>
+      <div className="min-h-dvh bg-red"></div>
     </main>
   );
 };

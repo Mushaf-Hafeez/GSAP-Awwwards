@@ -39,3 +39,7 @@ body {
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+
+#slider::-webkit-scrollbar {
+  display: none;
+}
