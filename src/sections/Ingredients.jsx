@@ -24,6 +24,11 @@ const Ingredients = () => {
       stagger: 0.02,
       ease: "power1.inOut",
     })
+      .to("#ingredients-clip-heading", {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        duration: 1,
+        ease: "power1.inOut",
+      })
       .from(
         "#ingredients-para",
         {
@@ -32,12 +37,7 @@ const Ingredients = () => {
           ease: "power1.inOut",
         },
         "<"
-      )
-      .to("#ingredients-clip-heading", {
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        duration: 1,
-        ease: "power1.inOut",
-      });
+      );
   }, []);
 
   return (
@@ -79,8 +79,14 @@ const Ingredients = () => {
           </p>
         </div>
         {/* footer */}
-        <div className="bg-red w-9/12 absolute bottom-20 left-1/2 -translate-x-1/2">
-          this is the footer of the section
+        <div className="bg-milk text-mid-brown border-4 border-milk-yellow rounded-full w-8/12 absolute bottom-15 left-1/2 -translate-x-1/2 px-20 py-4 flex items-center justify-between">
+          {nutrientLists.map((item, index) => (
+            <span className="flex flex-col gap-2">
+              <p>{item.label}</p>
+              <p className="font-paragraph text-sm">UPTO</p>
+              <h3 className="text-3xl font-semibold">{item.amount}</h3>
+            </span>
+          ))}
         </div>
       </div>
     </section>
