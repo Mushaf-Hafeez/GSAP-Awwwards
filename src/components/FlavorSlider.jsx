@@ -21,9 +21,9 @@ const FlavorSlider = () => {
 
   return (
     <div>
-      <div className="flex gap-10">
+      <div className="flex gap-20">
         {flavorlists.map((flavor, index) => (
-          <div key={index} className="flex-none relative">
+          <div key={index} className={`flex-none relative ${flavor.rotation}`}>
             <img
               src={`/images/${flavor.color}-bg.svg`}
               alt=""
