@@ -6,7 +6,7 @@ const Flavor = () => {
   return (
     <section id="flavor" className="min-h-screen bg-milk">
       {/* main container  */}
-      <div className="h-screen w-full flex gap-10 items-center my-20 px-9">
+      <div className="h-screen w-full flex gap-10 items-center px-9">
         {/* flavor title */}
         <div>
           <FlavorTitle />

@@ -7,14 +7,15 @@ import { flavorlists } from "../constants/index";
 const FlavorSlider = () => {
   useGSAP(() => {
     gsap.to("#flavor", {
-      x: -9000,
+      x: -3500,
       stagger: 1,
       ease: "power1.inOut",
       scrollTrigger: {
         trigger: "#flavor",
         start: "10% top",
-        end: "+=600",
+        end: "bottom 30%",
         scrub: true,
+        pin: true,
       },
     });
   }, []);
