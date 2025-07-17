@@ -10,6 +10,7 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Flavor from "./sections/Flavor";
 import { useEffect } from "react";
+import Ingredients from "./sections/Ingredients";
 
 // register plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -30,7 +31,8 @@ const App = () => {
       <Hero />
       <About />
       <Flavor />
-      <div className="min-h-dvh bg-red"></div>
+      <Ingredients />
+      <div className="min-h-dvh"></div>
     </main>
   );
 };
