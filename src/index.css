@@ -43,3 +43,10 @@ body::-webkit-scrollbar {
 #slider::-webkit-scrollbar {
   display: none;
 }
+
+.mask {
+  mask-image: url("/images/play.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+}
