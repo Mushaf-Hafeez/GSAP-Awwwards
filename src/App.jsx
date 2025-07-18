@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import Ingredients from "./sections/Ingredients";
 import Advantages from "./sections/Advantages";
 import Video from "./sections/Video";
+import Reviews from "./sections/Reviews";
 
 // register plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -36,6 +37,7 @@ const App = () => {
       <Ingredients />
       <Advantages />
       <Video />
+      <Reviews />
       <div className="min-h-dvh"></div>
     </main>
   );
