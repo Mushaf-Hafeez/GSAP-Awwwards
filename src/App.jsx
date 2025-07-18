@@ -11,6 +11,7 @@ import About from "./sections/About";
 import Flavor from "./sections/Flavor";
 import { useEffect } from "react";
 import Ingredients from "./sections/Ingredients";
+import Advantages from "./sections/Advantages";
 
 // register plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -32,6 +33,7 @@ const App = () => {
       <About />
       <Flavor />
       <Ingredients />
+      <Advantages />
       <div className="min-h-dvh"></div>
     </main>
   );
