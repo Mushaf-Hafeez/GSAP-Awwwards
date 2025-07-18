@@ -14,6 +14,7 @@ import Ingredients from "./sections/Ingredients";
 import Advantages from "./sections/Advantages";
 import Video from "./sections/Video";
 import Reviews from "./sections/Reviews";
+import Footer from "./sections/Footer";
 
 // register plugins
 gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -38,7 +39,7 @@ const App = () => {
       <Advantages />
       <Video />
       <Reviews />
-      <div className="min-h-dvh"></div>
+      <Footer />
     </main>
   );
 };

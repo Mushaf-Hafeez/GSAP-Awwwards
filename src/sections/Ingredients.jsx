@@ -81,7 +81,7 @@ const Ingredients = () => {
         {/* footer */}
         <div className="bg-milk text-mid-brown border-4 border-milk-yellow rounded-full w-8/12 absolute bottom-15 left-1/2 -translate-x-1/2 px-20 py-4 flex items-center justify-between">
           {nutrientLists.map((item, index) => (
-            <span className="flex flex-col gap-2">
+            <span key={index} className="flex flex-col gap-2">
               <p>{item.label}</p>
               <p className="font-paragraph text-sm">UPTO</p>
               <h3 className="text-3xl font-semibold">{item.amount}</h3>

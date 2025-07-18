@@ -111,7 +111,7 @@ const Reviews = () => {
               </div>
               <video
                 muted
-                playsInLine
+                playsInline
                 loop
                 className="rounded-2xl h-full w-full"
               >

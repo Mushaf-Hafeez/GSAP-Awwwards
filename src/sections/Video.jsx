@@ -39,7 +39,7 @@ const Video = () => {
           id="video"
           muted
           loop
-          playsInline="true"
+          playsInline
           className="w-full object-cover"
           style={{
             clipPath: "circle(4.5% at 50% 50%)",
